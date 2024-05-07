@@ -3,7 +3,7 @@
 ├── LICENSE
 ├── README.md
 ├── directory_tree.txt
-├── requierments.txt
+├── requirements.txt
 ├── client
 │   └──  src
 │        └── init.py
