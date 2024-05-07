@@ -1,0 +1,13 @@
+.
+├── .gitignore
+├── LICENSE
+├── README.md
+├── directory_tree.txt
+├── requierments.txt
+├── client
+│   └──  src
+│        └── init.py
+├── server
+│   └──  init.py
+├── tests
+    └──  unit.py
