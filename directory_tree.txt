@@ -4,10 +4,9 @@
 ├── README.md
 ├── directory_tree.txt
 ├── requirements.txt
-├── client
-│   └──  src
-│        └── init.py
-├── server
-│   └──  init.py
+├── src
+│   └── client.py
+│   └── server.py
 ├── tests
-    └──  unit.py
+    └──  unitTestClient.py
+    └──  unitTestServer.py
