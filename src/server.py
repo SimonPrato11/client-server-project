@@ -88,10 +88,10 @@ def main():
                 file.write(
                     str(received_dict.decode()) + "\n" + str(received_text.decode())
                 )
-    except Exception as e:
-        print(f"Error processing data: {e}")
     except socket.error as e:
         print(f"Connection error: {e}")
+    except Exception as e:
+        print(f"Error processing data: {e}")
     finally:
         conn.close()
         server_socket.close()
