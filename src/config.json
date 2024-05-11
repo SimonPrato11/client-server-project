@@ -1,0 +1,6 @@
+{
+  "dictionary_format": "json",
+  "encrypt_text_file": true,
+  "server_output": "print",
+  "server_output_file": "received_data.txt"
+}
