@@ -29,9 +29,18 @@ import json
 import xml.etree.ElementTree as ET
 import pickle
 
-# Append the path to the src directory so that Python can find the modules
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
-import client  # Import module
+
+# Adjust the system path to include the server directory
+project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+src_dir = os.path.join(project_dir, "src")
+sys.path.append(src_dir)
+
+try:
+    import client
+
+    print("client module imported successfully!")
+except ModuleNotFoundError:
+    print("Failed to import client module. Check the path and existence of client.py.")
 
 
 class TestClient(unittest.TestCase):
