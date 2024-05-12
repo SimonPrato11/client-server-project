@@ -44,6 +44,15 @@ except ModuleNotFoundError:
 
 
 class TestClient(unittest.TestCase):
+    """
+    A test suite for verifying the functionality of the client's data serialization.
+
+    This class contains tests that check the serialization and deserialization
+    capabilities of a client module that supports multiple data formats:
+    binary (using pickle), JSON, and XML. It ensures that the data, once serialized
+    and then deserialized, retains its original structure and content.
+    """
+
     def test_serialize_data_binary(self):
         """Test serialization of data into binary format."""
         data = {"name": "John", "age": 30, "city": "New York"}
