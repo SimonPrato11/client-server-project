@@ -36,7 +36,7 @@ from cryptographyHelper import encrypt_message, generate_key
 def load_configuration(config_path):
     """Load and return the configuration from a JSON file."""
     try:
-        with open(config_path, "r") as config_file:
+        with open(config_path, "r", encoding="utf-8") as config_file:
             return json.load(config_file)
     except FileNotFoundError:
         print(f"Error: The configuration file '{config_path}' was not found.")
