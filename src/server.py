@@ -33,6 +33,20 @@ from cryptographyHelper import decrypt_message
 
 
 def load_configuration(file_path):
+    """
+    Load a configuration from a JSON file.
+
+    This function attempts to open and read a JSON file, returning the parsed
+    content. It handles file-not-found and JSON decoding errors by printing an error
+    message and returning None.
+
+    Args:
+        file_path (str): The path to the JSON configuration file.
+
+    Returns:
+        dict or None: The parsed JSON data as a dictionary if the file is successfully read and parsed.
+                      Returns None if the file does not exist or an error occurs during JSON decoding.
+    """
     try:
         with open(file_path, "r") as file:
             return json.load(file)
