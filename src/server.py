@@ -84,7 +84,7 @@ def main():
             print("Received text:", received_text.decode())
 
         if config.get("server_output") == "file":
-            with open(config["server_output_file"], "w") as file:
+            with open(config["server_output_file"], "w", encoding="utf-8") as file:
                 file.write(
                     str(received_dict.decode()) + "\n" + str(received_text.decode())
                 )
