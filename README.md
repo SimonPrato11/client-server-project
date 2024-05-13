@@ -33,11 +33,11 @@ python src/client.py
 
 ## Testing
 
-To execute the tests, navigate to the tests directory and run:
+To run the tests:
 
 ```bash
-python unitTestServer.py
-python unitTestClient.py
+python tests/unitTestServer.py
+python tests/unitTestClient.py
 ```
 
 ## Contributing
