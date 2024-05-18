@@ -81,7 +81,10 @@ def main():
         conn, addr = server_socket.accept()
         print(f"Connected by {addr}")
 
-        config = load_configuration("config.json")
+        config_path = os.path.join(
+            os.path.dirname(os.path.realpath(__file__)), "config.json"
+        )
+        config = load_configuration(config_path)
         if config is None:
             conn.close()
             return
